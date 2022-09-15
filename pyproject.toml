@@ -1,0 +1,36 @@
+[build-system]
+requires = [ "hatchling" ]
+build-backend = "hatchling.build"
+
+[project]
+name = "exoclasma-fastq"
+version = "0.9.0"
+authors = [
+	{ name = "Emil Viesná", email="regnveig@yandex.ru" },
+	{ name = "Minja Fishman", email="minja-f@yandex.ru" }
+]
+description = "Different file formats to FastQ, part of ExoClasma Suite"
+keywords = ["bioinformatics", "fastq", "juicer", "sra", "conversion"]
+readme = "README.md"
+license = "GPL-3.0-or-later"
+requires-python = ">= 3.10"
+dependencies = [
+	"biopython"
+]
+classifiers = [
+	"Programming Language :: Python :: 3.10",
+	"License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+	"Intended Audience :: Science/Research",
+	"Topic :: Scientific/Engineering :: Bio-Informatics",
+	"Operating System :: POSIX :: Linux",
+	"Natural Language :: English",
+	"Development Status :: 3 - Alpha",
+	"Environment :: Console"
+]
+
+[project.scripts]
+exoclasma-fastq = "exoclasma_fastq.exoclasma_fastq:main"
+
+[project.urls]
+"Homepage" = "https://github.com/regnveig/exoclasma-fastq"
+"Bug Tracker" = "https://github.com/regnveig/exoclasma-fastq/issues"
